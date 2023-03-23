@@ -13,6 +13,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
   height: 100vh;
 }
 .conteiner {
@@ -31,6 +32,8 @@ body {
   justify-content: center;
 }
 .hero-section-left {
+  width: 800px;
+  height: 500px;
   margin-right: 60px;
 }
 .hero-section-right {
@@ -61,7 +64,7 @@ body {
 .hero-section-right button {
   height: 56px;
   width: 200px;
-  background: #e880e8;
+  background: #ffffff;
   box-shadow: 2px 4px 9px 3px rgba(0, 0, 0, 0.258633);
   border: none;
   border-radius: 28px;
@@ -74,6 +77,10 @@ body {
 
   text-align: center;
 
+  color: #684bb1;
+}
+.hero-section-right button:hover {
+  background: #e880e8;
   color: #ffffff;
 }
 .footer {
@@ -91,6 +98,73 @@ body {
   border: 1.17647px solid #ffffff;
   border-radius: 50%;
 }
-.footer div i {
-  /* padding: 15px; */
+.footer div:hover {
+  border: 1.17647px solid #ff52c1;
+  color: #ff52c1;
+}
+.fb-icon:hover i {
+  color: #ff52c1 !important;
+}
+
+.twitter-icon:hover i {
+  color: #ff52c1 !important;
+}
+
+.instagram-icon:hover i {
+  color: #ff52c1 !important;
+}
+@media screen and (max-width: 1440px) {
+  body {
+    background-image: url(images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .conteiner {
+    height: 800px;
+    width: 375px;
+  }
+  .header {
+    margin-bottom: 70px;
+  }
+  .header img {
+    width: 120px;
+  }
+  .hero-section {
+    display: block;
+    margin: 0 auto;
+  }
+  .hero-section {
+    flex-direction: column;
+  }
+  .hero-section-left {
+    margin-right: 0px;
+  }
+  .hero-section-left img {
+    height: 200px;
+    width: 300px;
+  }
+  .hero-section-right h1 {
+    height: 72px;
+    width: 280px;
+
+    font-size: 24px;
+    line-height: 36px;
+    /* or 150% */
+
+    text-align: center;
+
+    color: #ffffff;
+  }
+  .hero-section-right p {
+    height: 120px;
+    width: 304px;
+
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+
+    text-align: center;
+
+    color: #ffffff;
+  }
 }
